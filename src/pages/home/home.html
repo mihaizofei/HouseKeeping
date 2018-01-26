@@ -1,37 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Administration
+    <ion-title class="center">
+      <div class="center">
+        {{title | uppercase}}
+      </div>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
-    <ion-item>
-      <ion-label floating>Bathroom H</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Bathroom C</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Kitchen H</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Kitchen C</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-label floating>Total Hot</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
       <ion-item>
-        <ion-label floating>Total Cold</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-label floating><ion-icon name="search"></ion-icon></ion-label>
+        <ion-input clearInput type="text" [(ngModel)]="city"></ion-input>
       </ion-item>
   </ion-list>
-  <button ion-button color="light">Save</button>
+  <button ion-button color='dark' (click)="searchCity()" full>Search</button>
 </ion-content>
