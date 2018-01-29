@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'page-home',
@@ -14,8 +15,11 @@ export class HomePage {
     this.title = 'Craiova';
   }
 
-  public searchCity(){
-    console.log(`You've searched: ${this.city}`);
+  public searchCity() {
+    if (!_.isEmpty(this.city)) {
+      this.title = this.city;
+      console.log(`You've searched: ${this.city}`);
+    }
   }
 
 }
