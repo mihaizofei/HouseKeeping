@@ -50,7 +50,7 @@
     "angular2-template-loader": "^0.6.2",
     "html-loader": "^0.5.5",
     "istanbul-instrumenter-loader": "^3.0.0",
-    "jasmine": "^3.0.0",
+    "jasmine": "^2.9.0",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
